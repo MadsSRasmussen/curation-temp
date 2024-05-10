@@ -1,0 +1,9 @@
+.textbox-paragraph-element {
+    width: fit-content;
+    min-height: var(--font-size);
+    white-space: pre-wrap;
+}
+
+.textbox-title-element {
+    font-size: 1.5em;
+}

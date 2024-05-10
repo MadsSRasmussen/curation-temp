@@ -1,0 +1,43 @@
+#canvas {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2.5;
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.canvas-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#canvas-roof {
+    display: flex;
+    background: rgb(219, 219, 219);
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#canvas-floor {
+    display: flex;
+    background: rgb(172, 172, 172);
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-element {
+    position: absolute;
+    background-size: cover;
+    cursor: pointer;
+}

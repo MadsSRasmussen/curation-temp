@@ -1,0 +1,44 @@
+@import "./styles/root-styles.css";
+@import "./styles//canvas-styles.css";
+@import "./styles/menu-styles.css";
+@import "./styles/textbox-styles.css";
+@import "./styles/textbox-content-styles.css";
+@import "./styles//popup-styles.css";
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.textBox {
+    box-sizing: border-box;
+    font: var(--font-size) 'Noto Sans', sans-serif;
+    border-radius: 8px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+.textBox:focus {
+    outline: 2px solid red;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.carret {
+    background-color: black;
+    width: 2px;
+    height: calc(var(--font-size) + 2px);
+    position: absolute;
+    animation: blink 1s step-start infinite;
+    pointer-events: none;
+}
+
+.textBox p {
+    min-height: var(--font-size);
+    width: fit-content;
+}

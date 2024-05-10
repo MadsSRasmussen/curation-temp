@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Test</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="menu">
+            <button id="menu-toggle-button">
+                <svg viewBox="0 0 32 32" fill="none" class="v-icon__component theme--light" style="font-size: 15px; height: 15px; width: 15px;"><path d="M21.48 28.313a2 2 0 0 1-1.4-.57L9.6 17.493a2 2 0 0 1-.435-2.218 2 2 0 0 1 .455-.652l10.47-10a2 2 0 1 1 2.77 2.88l-9 8.63 9 8.8a2 2 0 0 1-1.4 3.43l.02-.05Z" fill="currentColor"></path></svg>
+            </button>
+            <div id="menu-content" class="hidden">
+                <section class="menu-section edit-section">
+                    <h3>Rediger</h3>
+                    <section class="color-picker">
+                        <label class="menubar-cta-label" for="canvas-color-picker">
+                            <img class="menubar-cta-icon" src="../assets/icons/edit-icon.svg" alt="">
+                            Vælg vægfarve
+                        </label>
+                        <input type="color" id="canvas-color-picker" style="display: none;">
+                    </section>
+                    <section class="textbox-section">
+                        <label class="menubar-cta-label" for="add-textbox-button">
+                            <img class="menubar-cta-icon" src="../assets/icons/edit-icon.svg" alt="">
+                            Indsæt tekstfelt
+                        </label>
+                        <button id="add-textbox-button" style="display: none;"></button>
+                    </section>
+                </section>
+                <section class="menu-section image-catalouge">
+                    <h3>Værker</h3>
+                    <div id="image-catalouge-content" class="image-catalouge-image-grid">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <div id="canvas-roof">
+                LOFT -- PLACEHOLDER
+            </div>
+            <div id="canvas"></div>
+            <div id="canvas-floor">
+                FLOOR -- PLACEHOLDER
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../dist/index.js" type="module"></script>
+</body>
+</html>
